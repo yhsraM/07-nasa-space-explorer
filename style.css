@@ -1,3 +1,20 @@
+/* Spinning NASA logo at the bottom (no distortion) */
+.spinning-nasa-logo {
+  /* Only set width, let height scale naturally */
+  width: 100px;
+  /* Smooth infinite spin */
+  animation: spin-nasa-logo 3s linear infinite;
+  display: block;
+}
+
+@keyframes spin-nasa-logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* USA Alert styles for fun fact box */
 .usa-alert {
   background: #ffebd1;
@@ -39,7 +56,7 @@
 
 /* Base page styles */
 body {
-  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #061f4a !important;
   padding: 20px;
 }
